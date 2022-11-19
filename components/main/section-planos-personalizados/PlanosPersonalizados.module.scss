@@ -9,3 +9,56 @@
     padding-right: 210px;
     background-color: $white;
 }
+
+.Content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+        text-align: center;
+    }
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.Itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.Item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: $green-600;
+        margin-bottom: 40px;
+    }
+}
