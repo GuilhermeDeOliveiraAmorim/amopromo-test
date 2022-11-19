@@ -2,6 +2,7 @@ import { Header } from '../components/header';
 import { SectionPorQueSeguro } from '../components/main/section-mas-por-que-ter-um-seguro-de-vida';
 import { SectionNossasCoberturas } from '../components/main/section-nossas-coberturas';
 import { SectionPlanosPersonalizados } from '../components/main/section-planos-personalizados';
+import { SectionQualSeguroContratar } from '../components/main/section-qual-seguro-contratar';
 import IAccordionData from '../interfaces/IAccordionData';
 
 const contactContent = {
@@ -29,6 +30,7 @@ export default function Home(accordionData: IAccordionData) {
 				<SectionPlanosPersonalizados />
 				<SectionNossasCoberturas />
 				<SectionPorQueSeguro data={accordionData.data} />
+				<SectionQualSeguroContratar />
 			</main>
 
 			<footer>
