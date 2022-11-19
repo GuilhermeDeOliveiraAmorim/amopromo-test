@@ -1,0 +1,36 @@
+@import "styles/variables";
+
+.Nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px;
+    background-color: $green-700;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $green-700;
+
+    ul {
+        display: flex;
+
+        li {
+            padding: 22px;
+            color: $white;
+            font-weight: 900;
+        }
+    }
+}
+
+.CustomerArea {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: $white;
+    font-weight: 900;
+}

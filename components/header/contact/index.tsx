@@ -1,11 +1,6 @@
 import React from "react";
+import IContact from "../../../interfaces/IContact";
 import ContactStyles from './Contact.module.scss';
-
-interface IContact {
-    title: string;
-    phoneNumber: string;
-    whatsapp: string;
-}
 
 function Contact(props: IContact) {
 
@@ -17,13 +12,13 @@ function Contact(props: IContact) {
                 {title}
             </span>
             <div className={ContactStyles.phone}>
-                <img className={ContactStyles.phone.img} src="/icons/phone-contact.svg" alt="" />
+                <img className={ContactStyles.phone} src="/icons/phone-contact.svg" alt="" />
                 <span>
                     {phoneNumber}
                 </span>
             </div>
             <div className={ContactStyles.phone}>
-                <img className={ContactStyles.phone.img} src="/icons/whatsapp-contact.svg" alt="" />
+                <img className={ContactStyles.phone} src="/icons/whatsapp-contact.svg" alt="" />
                 <span>
                     {whatsapp}
                 </span>
