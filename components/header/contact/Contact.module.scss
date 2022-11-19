@@ -1,0 +1,32 @@
+@import "styles/variables";
+
+.Contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 6px;
+    background-color: $green-900;
+
+    .title {
+        color: $white;
+    }
+
+    .phone {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+
+        span {
+            color: $white;
+        }
+
+        .img {
+            height: 20px;
+        }
+    }
+
+}
