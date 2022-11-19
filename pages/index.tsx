@@ -1,14 +1,8 @@
 import { Header } from '../components/header';
-import { Contact } from '../components/header/contact';
-import { Nav } from '../components/header/nav';
+import { SectionPorQueSeguro } from '../components/main/section-mas-por-que-ter-um-seguro-de-vida';
 import { SectionNossasCoberturas } from '../components/main/section-nossas-coberturas';
 import { SectionPlanosPersonalizados } from '../components/main/section-planos-personalizados';
-import IMenu from '../interfaces/IMenu';
-
-interface IAccordionData {
-	title: string;
-	text: string;
-}
+import IAccordionData from '../interfaces/IAccordionData';
 
 const contactContent = {
 	title: 'CENTRAL DE VENDAS:',
@@ -27,13 +21,14 @@ const navContent = {
 	]
 };
 
-export default function Home(accordionData: IAccordionData[]) {
+export default function Home(accordionData: IAccordionData) {
 	return (
 		<div>
 			<Header contact={contactContent} nav={navContent} />
 			<main>
 				<SectionPlanosPersonalizados />
 				<SectionNossasCoberturas />
+				<SectionPorQueSeguro data={accordionData.data} />
 			</main>
 
 			<footer>
@@ -45,6 +40,6 @@ export default function Home(accordionData: IAccordionData[]) {
 
 export async function getServerSideProps() {
 	const res = await fetch(`https://stark-cove-48986.herokuapp.com/seguros/motivos`);
-	const accordionData = await res.json();
-	return { props: { accordionData } }
+	const data = await res.json();
+	return { props: { data } }
 }
