@@ -1,0 +1,45 @@
+@import "styles/variables";
+
+.Footer {
+    padding-left: 210px;
+    padding-right: 210px;
+}
+
+.ColorHr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.SocialItems {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Hr {
+    padding: 0;
+    margin: 0;
+    border: solid 1px $green-900;
+}
+
+.FooterMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.Link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #435162;
+}

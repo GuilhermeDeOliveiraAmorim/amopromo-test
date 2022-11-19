@@ -1,3 +1,4 @@
+import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 import { SectionPorQueSeguro } from '../components/main/section-mas-por-que-ter-um-seguro-de-vida';
 import { SectionNossasCoberturas } from '../components/main/section-nossas-coberturas';
@@ -32,10 +33,7 @@ export default function Home(accordionData: IAccordionData) {
 				<SectionPorQueSeguro data={accordionData.data} />
 				<SectionQualSeguroContratar />
 			</main>
-
-			<footer>
-				Footer
-			</footer>
+			<Footer />
 		</div>
 	)
 }
