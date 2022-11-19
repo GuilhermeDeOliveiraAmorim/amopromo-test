@@ -1,9 +1,30 @@
 import React from "react";
 import { ButtonClear } from "../../util/button-clear";
+import { Card } from "./card";
 import NossasCoberturasStyles from './NossasCoberturas.module.scss';
 
-function SectionNossasCoberturas() {
+const arrCards = [
+    {
+        id: 1,
+        image: "/icons/angel.svg",
+        title: "Morte",
+        content: "Se você vier a faltar por causa de um acidente ou doença, a pessoa que você escolheu como beneficiário receberá o valor contratado.",
+    },
+    {
+        id: 2,
+        image: "/icons/angel.svg",
+        title: "Morte",
+        content: "Se você vier a faltar por causa de um acidente ou doença, a pessoa que você escolheu como beneficiário receberá o valor contratado.",
+    },
+    {
+        id: 3,
+        image: "/icons/angel.svg",
+        title: "Morte",
+        content: "Se você vier a faltar por causa de um acidente ou doença, a pessoa que você escolheu como beneficiário receberá o valor contratado.",
+    },
+]
 
+function SectionNossasCoberturas() {
     return (
         <div className={NossasCoberturasStyles.NossasCoberturas}>
             <div className={NossasCoberturasStyles.Titles}>
@@ -15,24 +36,9 @@ function SectionNossasCoberturas() {
                 </h2>
             </div>
             <div className={NossasCoberturasStyles.Cards}>
-                <div className={NossasCoberturasStyles.Card}>
-                    <img src="/icons/angel.svg" alt="" />
-                    <h1>Morte</h1>
-                    <p>Se você vier a faltar por causa de um acidente ou doença, a pessoa que você escolheu como beneficiário receberá o valor contratado.</p>
-                    <ButtonClear title="Saiba Mais" color="#33794A" bgColor="#60C742" fontSize="12px" />
-                </div>
-                <div className={NossasCoberturasStyles.Card}>
-                    <img src="/icons/angel.svg" alt="" />
-                    <h1>Morte</h1>
-                    <p>Se você vier a faltar por causa de um acidente ou doença, a pessoa que você escolheu como beneficiário receberá o valor contratado.</p>
-                    <ButtonClear title="Saiba Mais" color="#33794A" bgColor="#60C742" fontSize="12px" />
-                </div>
-                <div className={NossasCoberturasStyles.Card}>
-                    <img src="/icons/angel.svg" alt="" />
-                    <h1>Morte</h1>
-                    <p>Se você vier a faltar por causa de um acidente ou doença, a pessoa que você escolheu como beneficiário receberá o valor contratado.</p>
-                    <ButtonClear title="Saiba Mais" color="#33794A" bgColor="#60C742" fontSize="12px" />
-                </div>
+                {arrCards.map(card =>
+                    <Card key={card.id} title={card.title} image={card.image} content={card.content} />
+                )}
             </div>
             <div className={NossasCoberturasStyles.Footer}>
                 <ButtonClear title="Faça sua cotação" />
