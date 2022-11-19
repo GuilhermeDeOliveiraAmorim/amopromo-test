@@ -7,6 +7,10 @@
     align-items: center;
     padding: 24px;
     background-color: $green-700;
+
+    @media (max-width: $desktop_xsm) {
+        flex-direction: column;
+    }
 }
 
 .Link {
@@ -21,6 +25,10 @@
 
     ul {
         display: flex;
+
+        @media (max-width: $desktop_xsm) {
+            display: none;
+        }
 
         li {
             padding: 22px;
@@ -37,6 +45,10 @@
     gap: 5px;
     color: $white;
     font-weight: 900;
+
+    @media (max-width: $desktop_xsm) {
+        display: none;
+    }
 
     span {
         color: $white;
