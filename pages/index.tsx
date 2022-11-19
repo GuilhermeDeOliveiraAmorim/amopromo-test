@@ -1,6 +1,7 @@
 import { Header } from '../components/header';
 import { Contact } from '../components/header/contact';
 import { Nav } from '../components/header/nav';
+import { SectionNossasCoberturas } from '../components/main/section-nossas-coberturas';
 import { SectionPlanosPersonalizados } from '../components/main/section-planos-personalizados';
 import IMenu from '../interfaces/IMenu';
 
@@ -32,6 +33,7 @@ export default function Home(accordionData: IAccordionData[]) {
 			<Header contact={contactContent} nav={navContent} />
 			<main>
 				<SectionPlanosPersonalizados />
+				<SectionNossasCoberturas />
 			</main>
 
 			<footer>
