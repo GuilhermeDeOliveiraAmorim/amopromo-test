@@ -1,8 +1,4 @@
-interface IData {
-    title: string;
-    text: string;
-}
-
+import IAccordion from "./IAccordion";
 export default interface IAccordionData {
-    data: IData[];
+    data: IAccordion[];
 }
