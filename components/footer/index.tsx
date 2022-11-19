@@ -202,7 +202,7 @@ function Footer() {
                 </div>
                 <hr className={FooterStyles.Hr} />
                 <div className={FooterStyles.FooterMenu}>
-                    <div>
+                    <div className={FooterStyles.Links}>
                         <h1>
                             QUEM SOMOS
                         </h1>
@@ -214,7 +214,7 @@ function Footer() {
                             )}
                         </ul>
                     </div>
-                    <div>
+                    <div className={FooterStyles.Links}>
                         <h1>
                             SEGURADORAS
                         </h1>
@@ -226,7 +226,7 @@ function Footer() {
                             )}
                         </ul>
                     </div>
-                    <div>
+                    <div className={FooterStyles.Links}>
                         <h1>
                             SEGUROS
                         </h1>
@@ -238,7 +238,7 @@ function Footer() {
                             )}
                         </ul>
                     </div>
-                    <div>
+                    <div className={FooterStyles.Links}>
                         <h1>
                             BLOG
                         </h1>
@@ -250,6 +250,46 @@ function Footer() {
                             )}
                         </ul>
                     </div>
+                    <div className={FooterStyles.Sales}>
+                        <div className={FooterStyles.SalesItem}>
+                            <h1>
+                                CENTRAL DE VENDAS
+                            </h1>
+                            <ul>
+                                <Link href={"#"} className={FooterStyles.SalesLink} >
+                                    <li>
+                                        <img src="/icons/footer-phone.svg" />
+                                        <span>(31) 4000-1667</span>
+                                    </li>
+                                </Link>
+                                <Link href={"#"} className={FooterStyles.SalesLink} >
+                                    <li>
+                                        <img src="/icons/footer-whatsapp.svg" />
+                                        <span>(31) 2534-2115</span>
+                                    </li>
+                                </Link>
+                            </ul>
+                        </div>
+                        <div className={FooterStyles.SalesItem}>
+                            <h1>
+                                ATENDIMENTO
+                            </h1>
+                            <ul>
+                                <Link href={"#"} className={FooterStyles.SalesLink} >
+                                    <li className={FooterStyles.SalesLink}>
+                                        <img src="/icons/footer-phone.svg" />
+                                        <span>(31) 4000-1667</span>
+                                    </li>
+                                </Link>
+                                <Link href={"#"} className={FooterStyles.SalesLink} >
+                                    <li className={FooterStyles.SalesLink}>
+                                        <img src="/icons/footer-help.svg" />
+                                        <span>Central de Ajuda</span>
+                                    </li>
+                                </Link>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div className={FooterStyles.Payments}>
 
@@ -259,7 +299,7 @@ function Footer() {
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 
