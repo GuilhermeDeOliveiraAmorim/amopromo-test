@@ -18,7 +18,9 @@ function Nav(menu: IMenu) {
             </div>
             <div className={NavStyles.CustomerArea}>
                 <img src="icons/user.svg" alt="" />
-                <span>Área do Cliente</span>
+                <Link href={"#"} className={NavStyles.Link}>
+                    <span>Área do Cliente</span>
+                </Link>
                 <img src="icons/arrow-right.svg" alt="" />
             </div>
         </div>

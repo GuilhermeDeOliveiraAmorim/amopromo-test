@@ -11,17 +11,19 @@ function Contact(props: IContact) {
             <span className={ContactStyles.title}>
                 {title}
             </span>
-            <div className={ContactStyles.phone}>
-                <img className={ContactStyles.phone} src="/icons/phone-contact.svg" alt="" />
-                <span>
-                    {phoneNumber}
-                </span>
-            </div>
-            <div className={ContactStyles.phone}>
-                <img className={ContactStyles.phone} src="/icons/whatsapp-contact.svg" alt="" />
-                <span>
-                    {whatsapp}
-                </span>
+            <div className={ContactStyles.contacts}>
+                <div className={ContactStyles.phone}>
+                    <img className={ContactStyles.phone} src="/icons/phone-contact.svg" alt="" />
+                    <span>
+                        {phoneNumber}
+                    </span>
+                </div>
+                <div className={ContactStyles.phone}>
+                    <img className={ContactStyles.phone} src="/icons/whatsapp-contact.svg" alt="" />
+                    <span>
+                        {whatsapp}
+                    </span>
+                </div>
             </div>
         </div>
     )

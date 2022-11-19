@@ -28,4 +28,20 @@
             height: 20px;
         }
     }
+
+    .contacts {
+        display: flex;
+        gap: 20px;
+    }
+
+    @media (max-width: $desktop_xsm) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
+        
+    }
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
+        
+    }
 }
