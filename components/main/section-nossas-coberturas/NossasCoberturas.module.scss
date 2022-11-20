@@ -8,6 +8,10 @@
     padding-left: 210px;
     padding-right: 210px;
     background-color: $gray-600;
+
+    @media (max-width: $desktop_xsm) {
+        padding: 20px;
+    }
 }
 
 .Titles {
@@ -24,6 +28,24 @@
         line-height: 150%;
         color: $gray-900;
     }
+
+    @media (max-width: $desktop_xsm) {
+        h1 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+            text-align: center;
+            color: $gray-900;
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: $gray-900;
+        }
+    }
 }
 
 .Cards {
@@ -32,6 +54,10 @@
     gap: 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    @media (max-width: $desktop_xsm) {
+        flex-direction: column;
+    }
 }
 
 .Card {

@@ -10,6 +10,10 @@
     hr {
         border: 1px solid #CCD1D6;
     }
+
+    @media (max-width: $desktop_xsm) {
+        padding: 20px;
+    }
 }
 
 .Title {
