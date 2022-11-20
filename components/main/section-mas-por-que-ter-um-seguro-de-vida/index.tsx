@@ -14,7 +14,7 @@ function SectionPorQueSeguro(props: IAccordionData) {
                 Mas por que ter um seguro de vida?
             </h1>
             <div className={PorQueSeguroStyles.Content}>
-                <div className={PorQueSeguroStyles.Accordions}>
+                <div className={PorQueSeguroStyles.AccordionsList}>
                     {data.map(item =>
                         <Accordion title={item.title} text={item.text} />
                     )}

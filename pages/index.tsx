@@ -4,6 +4,7 @@ import { SectionPorQueSeguro } from '../components/main/section-mas-por-que-ter-
 import { SectionNossasCoberturas } from '../components/main/section-nossas-coberturas';
 import { SectionPlanosPersonalizados } from '../components/main/section-planos-personalizados';
 import { SectionQualSeguroContratar } from '../components/main/section-qual-seguro-contratar';
+import { ColorHr } from '../components/util/color-hr';
 import IAccordionData from '../interfaces/IAccordionData';
 
 const contactContent = {
@@ -33,6 +34,7 @@ export default function Home(accordionData: IAccordionData) {
 				<SectionPorQueSeguro data={accordionData.data} />
 				<SectionQualSeguroContratar />
 			</main>
+			<ColorHr />
 			<Footer />
 		</div>
 	)

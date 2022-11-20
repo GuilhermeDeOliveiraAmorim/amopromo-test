@@ -181,204 +181,196 @@ const blog = [
 
 function Footer() {
     return (
-        <div>
-            <div className={FooterStyles.ColorHr}>
-                <span style={{ height: "4px", backgroundColor: "#64BA00" }}></span>
-                <span style={{ height: "4px", backgroundColor: "#68629C" }}></span>
-                <span style={{ height: "4px", backgroundColor: "#FFD012" }}></span>
-                <span style={{ height: "4px", backgroundColor: "#007E47" }}></span>
+        <div className={FooterStyles.Footer}>
+            <div className={FooterStyles.Social}>
+                <img src="logo-color.svg" />
+                <div className={FooterStyles.SocialItems}>
+                    <span>
+                        ACOMPANHE A GENTE:
+                    </span>
+                    <img src="/icons/social/facebook.svg" />
+                    <img src="/icons/social/twitter.svg" />
+                    <img src="/icons/social/instagram.svg" />
+                </div>
             </div>
-            <div className={FooterStyles.Footer}>
-                <div className={FooterStyles.Social}>
-                    <img src="logo-color.svg" />
-                    <div className={FooterStyles.SocialItems}>
-                        <span>
-                            ACOMPANHE A GENTE:
-                        </span>
-                        <img src="/icons/social/facebook.svg" />
-                        <img src="/icons/social/twitter.svg" />
-                        <img src="/icons/social/instagram.svg" />
-                    </div>
+            <hr className={FooterStyles.Hr} />
+            <div className={FooterStyles.FooterMenu}>
+                <div className={FooterStyles.Links}>
+                    <h1>
+                        QUEM SOMOS
+                    </h1>
+                    <ul>
+                        {quem_somos.map(qs =>
+                            <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
+                                <li key={qs.id}>{qs.title}</li>
+                            </Link>
+                        )}
+                    </ul>
                 </div>
-                <hr className={FooterStyles.Hr} />
-                <div className={FooterStyles.FooterMenu}>
-                    <div className={FooterStyles.Links}>
-                        <h1>
-                            QUEM SOMOS
-                        </h1>
-                        <ul>
-                            {quem_somos.map(qs =>
-                                <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
-                                    <li key={qs.id}>{qs.title}</li>
-                                </Link>
-                            )}
-                        </ul>
-                    </div>
-                    <div className={FooterStyles.Links}>
-                        <h1>
-                            SEGURADORAS
-                        </h1>
-                        <ul>
-                            {seguradoras.map(qs =>
-                                <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
-                                    <li key={qs.id}>{qs.title}</li>
-                                </Link>
-                            )}
-                        </ul>
-                    </div>
-                    <div className={FooterStyles.Links}>
-                        <h1>
-                            SEGUROS
-                        </h1>
-                        <ul>
-                            {seguros.map(qs =>
-                                <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
-                                    <li key={qs.id}>{qs.title}</li>
-                                </Link>
-                            )}
-                        </ul>
-                    </div>
-                    <div className={FooterStyles.Links}>
-                        <h1>
-                            BLOG
-                        </h1>
-                        <ul>
-                            {blog.map(qs =>
-                                <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
-                                    <li key={qs.id}>{qs.title}</li>
-                                </Link>
-                            )}
-                        </ul>
-                    </div>
-                    <div className={FooterStyles.Sales}>
-                        <div className={FooterStyles.SalesItem}>
-                            <h1>
-                                CENTRAL DE VENDAS
-                            </h1>
-                            <ul>
-                                <Link href={"#"} className={FooterStyles.SalesLink} >
-                                    <li>
-                                        <img src="/icons/footer-phone.svg" />
-                                        <span>(31) 4000-1667</span>
-                                    </li>
-                                </Link>
-                                <Link href={"#"} className={FooterStyles.SalesLink} >
-                                    <li>
-                                        <img src="/icons/footer-whatsapp.svg" />
-                                        <span>(31) 2534-2115</span>
-                                    </li>
-                                </Link>
-                            </ul>
-                        </div>
-                        <div className={FooterStyles.SalesItem}>
-                            <h1>
-                                ATENDIMENTO
-                            </h1>
-                            <ul>
-                                <Link href={"#"} className={FooterStyles.SalesLink} >
-                                    <li className={FooterStyles.SalesLink}>
-                                        <img src="/icons/footer-phone.svg" />
-                                        <span>(31) 4000-1667</span>
-                                    </li>
-                                </Link>
-                                <Link href={"#"} className={FooterStyles.SalesLink} >
-                                    <li className={FooterStyles.SalesLink}>
-                                        <img src="/icons/footer-help.svg" />
-                                        <span>Central de Ajuda</span>
-                                    </li>
-                                </Link>
-                            </ul>
-                        </div>
-                    </div>
+                <div className={FooterStyles.Links}>
+                    <h1>
+                        SEGURADORAS
+                    </h1>
+                    <ul>
+                        {seguradoras.map(qs =>
+                            <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
+                                <li key={qs.id}>{qs.title}</li>
+                            </Link>
+                        )}
+                    </ul>
                 </div>
-                <div className={FooterStyles.Payments}>
-                    <div className={FooterStyles.PaymentsTitle}>
-                        <h1>FORMAS DE PAGAMENTO:</h1>
-                    </div>
-                    <div className={FooterStyles.PaymentsContainer}>
-                        <span>
-                            Crédito em até 12 vezes
-                        </span>
-                        <div className={FooterStyles.PaymentsBanks}>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/flag/amex.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/flag/diners.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/flag/elo.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/flag/hyper.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/flag/master.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/flag/visa.svg" />
-                            </div>
-                        </div>
-                        <img src="icons/discounts/discount_5.svg" />
-                    </div>
-                    <div className={FooterStyles.PaymentsContainer}>
-                        <span>
-                            Boleto bancário
-                        </span>
-                        <div className={FooterStyles.PaymentsBanks}>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="/icons/ticket.svg" />
-                            </div>
-                        </div>
-                        <img src="icons/discounts/discount_5.svg" />
-                    </div>
-                    <div className={FooterStyles.PaymentsContainer}>
-                        <span>
-                            Transferência bancária
-                        </span>
-                        <div className={FooterStyles.PaymentsBanks}>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-0.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-1.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-2.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-3.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-4.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-5.svg" />
-                            </div>
-                            <div className={FooterStyles.PaymentsBank}>
-                                <img src="icons/banks/bancos-6.svg" />
-                            </div>
-                        </div>
-                        <img src="icons/discounts/discount_5.svg" />
-                    </div>
+                <div className={FooterStyles.Links}>
+                    <h1>
+                        SEGUROS
+                    </h1>
+                    <ul>
+                        {seguros.map(qs =>
+                            <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
+                                <li key={qs.id}>{qs.title}</li>
+                            </Link>
+                        )}
+                    </ul>
                 </div>
-                <hr className={FooterStyles.Hr} />
-                <div className={FooterStyles.CopyrightSponsors}>
-                    <div className={FooterStyles.Copyright}>
-                        <span>
-                            2XT | CNPJ: 73.690.653/0001-13 | Rua dos Timbiras, nº 1.532, 10º andar - Belo Horizonte - MG
-                            © 2022 Seguros Promo | By - Amopromo
-                        </span>
+                <div className={FooterStyles.Links}>
+                    <h1>
+                        BLOG
+                    </h1>
+                    <ul>
+                        {blog.map(qs =>
+                            <Link key={qs.id} href={qs.link} className={FooterStyles.Link} >
+                                <li key={qs.id}>{qs.title}</li>
+                            </Link>
+                        )}
+                    </ul>
+                </div>
+                <div className={FooterStyles.Sales}>
+                    <div className={FooterStyles.SalesItem}>
+                        <h1>
+                            CENTRAL DE VENDAS
+                        </h1>
+                        <ul>
+                            <Link href={"#"} className={FooterStyles.SalesLink} >
+                                <li>
+                                    <img src="/icons/footer-phone.svg" />
+                                    <span>(31) 4000-1667</span>
+                                </li>
+                            </Link>
+                            <Link href={"#"} className={FooterStyles.SalesLink} >
+                                <li>
+                                    <img src="/icons/footer-whatsapp.svg" />
+                                    <span>(31) 2534-2115</span>
+                                </li>
+                            </Link>
+                        </ul>
                     </div>
-                    <div className={FooterStyles.Sponsors}>
-                        <img src="/icons/ssl.png" />
-                        <img src="/icons/iata.png" />
-                        <img src="/icons/abav.png" />
-                        <img src="/icons/brasil-turismo.png" />
+                    <div className={FooterStyles.SalesItem}>
+                        <h1>
+                            ATENDIMENTO
+                        </h1>
+                        <ul>
+                            <Link href={"#"} className={FooterStyles.SalesLink} >
+                                <li className={FooterStyles.SalesLink}>
+                                    <img src="/icons/footer-phone.svg" />
+                                    <span>(31) 4000-1667</span>
+                                </li>
+                            </Link>
+                            <Link href={"#"} className={FooterStyles.SalesLink} >
+                                <li className={FooterStyles.SalesLink}>
+                                    <img src="/icons/footer-help.svg" />
+                                    <span>Central de Ajuda</span>
+                                </li>
+                            </Link>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div >
+            <div className={FooterStyles.Payments}>
+                <div className={FooterStyles.PaymentsTitle}>
+                    <h1>FORMAS DE PAGAMENTO:</h1>
+                </div>
+                <div className={FooterStyles.PaymentsContainer}>
+                    <span>
+                        Crédito em até 12 vezes
+                    </span>
+                    <div className={FooterStyles.PaymentsBanks}>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/flag/amex.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/flag/diners.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/flag/elo.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/flag/hyper.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/flag/master.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/flag/visa.svg" />
+                        </div>
+                    </div>
+                    <img src="icons/discounts/discount_5.svg" />
+                </div>
+                <div className={FooterStyles.PaymentsContainer}>
+                    <span>
+                        Boleto bancário
+                    </span>
+                    <div className={FooterStyles.PaymentsBanks}>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="/icons/ticket.svg" />
+                        </div>
+                    </div>
+                    <img src="icons/discounts/discount_5.svg" />
+                </div>
+                <div className={FooterStyles.PaymentsContainer}>
+                    <span>
+                        Transferência bancária
+                    </span>
+                    <div className={FooterStyles.PaymentsBanks}>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-0.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-1.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-2.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-3.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-4.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-5.svg" />
+                        </div>
+                        <div className={FooterStyles.PaymentsBank}>
+                            <img src="icons/banks/bancos-6.svg" />
+                        </div>
+                    </div>
+                    <img src="icons/discounts/discount_5.svg" />
+                </div>
+            </div>
+            <hr className={FooterStyles.Hr} />
+            <div className={FooterStyles.CopyrightSponsors}>
+                <div className={FooterStyles.Copyright}>
+                    <span>
+                        2XT | CNPJ: 73.690.653/0001-13 | Rua dos Timbiras, nº 1.532, 10º andar - Belo Horizonte - MG
+                        © 2022 Seguros Promo | By - Amopromo
+                    </span>
+                </div>
+                <div className={FooterStyles.Sponsors}>
+                    <img src="/icons/ssl.png" />
+                    <img src="/icons/iata.png" />
+                    <img src="/icons/abav.png" />
+                    <img src="/icons/brasil-turismo.png" />
+                </div>
+            </div>
+        </div>
     )
 }
 

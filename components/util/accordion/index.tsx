@@ -7,9 +7,9 @@ function Accordion(props: IAccordion) {
     return (
         <div className={AccordionItemsStyles.AccordionItem}>
             <div className={AccordionItemsStyles.Title}>
-                <h1>
+                <span className={AccordionItemsStyles.TitleH1}>
                     {title}
-                </h1>
+                </span>
                 <img src="/icons/arrow-down.svg" alt="" />
             </div>
             <p>

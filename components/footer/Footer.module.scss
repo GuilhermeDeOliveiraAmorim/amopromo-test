@@ -3,11 +3,10 @@
 .Footer {
     padding-left: 210px;
     padding-right: 210px;
-}
 
-.ColorHr {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    @media (max-width: $desktop_xsm) {
+        padding: 20px;
+    }
 }
 
 .Social {
@@ -16,12 +15,22 @@
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    @media (max-width: $desktop_xsm) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 .SocialItems {
     display: flex;
     align-items: center;
     gap: 12px;
+
+    @media (max-width: $desktop_xsm) {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 .Hr {
@@ -35,6 +44,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    @media (max-width: $desktop_xsm) {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
 }
 
 .Link {
@@ -101,6 +115,11 @@
     justify-content: space-between;
     padding-bottom: 50px;
     border-bottom: 1px solid #007e47;
+
+    @media (max-width: $desktop_xsm) {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 .PaymentsContainer {
@@ -132,6 +151,11 @@
     grid-template-columns: 1fr 1fr;
     padding-bottom: 50px;
     padding-top: 50px;
+
+    @media (max-width: $desktop_xsm) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 .Copyright {
@@ -145,6 +169,10 @@
 .Sponsors {
     display: flex;
     justify-content: end;
+
+    @media (max-width: $desktop_xsm) {
+        justify-content: center;
+    }
 
     img {
         height: 50px;
