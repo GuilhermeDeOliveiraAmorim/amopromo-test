@@ -1,4 +1,5 @@
 import React from "react";
+import { ButtonClear } from "../../util/button-clear";
 import QualSeguroContratarStyles from './QualSeguroContratar.module.scss';
 
 function SectionQualSeguroContratar() {
@@ -20,6 +21,7 @@ function SectionQualSeguroContratar() {
                         (99) 99999.9999
                     </span>
                 </div>
+                <ButtonClear title="Se preferir, entre em contato pelo Whatsapp" fontSize="12px" />
                 <h2>
                     Atendemos pelo telefone de seg. a sex., das 9h às 17h
                 </h2>

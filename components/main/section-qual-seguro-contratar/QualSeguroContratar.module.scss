@@ -8,11 +8,23 @@
     padding-left: 210px;
     padding-right: 210px;
 
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('/03.png') no-repeat center center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/03.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    @media (max-width: $desktop_xsm) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 660px;
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        grid-template-columns: 1fr;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/04.png') no-repeat center center cover;
+    }
 }
 
 .Title {
@@ -24,6 +36,14 @@
         color: $gray-900;
     }
 
+    @media (max-width: $desktop_xsm) {
+        h1 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+
     padding-right: 20px;
 }
 
@@ -31,6 +51,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
 
     h1 {
         font-weight: 700;
@@ -40,6 +62,15 @@
         color: $gray-900;
     }
 
+    @media (max-width: $desktop_xsm) {
+        h1 {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+            color: #737D86;
+        }
+    }
+
     h2 {
         font-weight: 400;
         font-size: 12px;
@@ -47,6 +78,13 @@
         color: $gray-900;
         text-align: center;
         padding-top: 300px;
+    }
+
+    @media (max-width: $desktop_xsm) {
+        h2 {
+            color: #737D86;
+            padding-top: 0;
+        }
     }
 
     padding-left: 20px;
