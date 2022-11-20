@@ -292,11 +292,90 @@ function Footer() {
                     </div>
                 </div>
                 <div className={FooterStyles.Payments}>
-
+                    <div className={FooterStyles.PaymentsTitle}>
+                        <h1>FORMAS DE PAGAMENTO:</h1>
+                    </div>
+                    <div className={FooterStyles.PaymentsContainer}>
+                        <span>
+                            Crédito em até 12 vezes
+                        </span>
+                        <div className={FooterStyles.PaymentsBanks}>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/flag/amex.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/flag/diners.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/flag/elo.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/flag/hyper.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/flag/master.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/flag/visa.svg" />
+                            </div>
+                        </div>
+                        <img src="icons/discounts/discount_5.svg" />
+                    </div>
+                    <div className={FooterStyles.PaymentsContainer}>
+                        <span>
+                            Boleto bancário
+                        </span>
+                        <div className={FooterStyles.PaymentsBanks}>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="/icons/ticket.svg" />
+                            </div>
+                        </div>
+                        <img src="icons/discounts/discount_5.svg" />
+                    </div>
+                    <div className={FooterStyles.PaymentsContainer}>
+                        <span>
+                            Transferência bancária
+                        </span>
+                        <div className={FooterStyles.PaymentsBanks}>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-0.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-1.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-2.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-3.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-4.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-5.svg" />
+                            </div>
+                            <div className={FooterStyles.PaymentsBank}>
+                                <img src="icons/banks/bancos-6.svg" />
+                            </div>
+                        </div>
+                        <img src="icons/discounts/discount_5.svg" />
+                    </div>
                 </div>
                 <hr className={FooterStyles.Hr} />
                 <div className={FooterStyles.CopyrightSponsors}>
-
+                    <div className={FooterStyles.Copyright}>
+                        <span>
+                            2XT | CNPJ: 73.690.653/0001-13 | Rua dos Timbiras, nº 1.532, 10º andar - Belo Horizonte - MG
+                            © 2022 Seguros Promo | By - Amopromo
+                        </span>
+                    </div>
+                    <div className={FooterStyles.Sponsors}>
+                        <img src="/icons/ssl.png" />
+                        <img src="/icons/iata.png" />
+                        <img src="/icons/abav.png" />
+                        <img src="/icons/brasil-turismo.png" />
+                    </div>
                 </div>
             </div>
         </div >

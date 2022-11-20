@@ -43,7 +43,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    color: #435162;
+    color: $footer-blue;
 
     li {
         padding-top: 6px;
@@ -80,7 +80,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
-    color: #435162;
+    color: $footer-blue;
 
     li {
         display: flex;
@@ -92,5 +92,61 @@
         display: flex;
         align-items: center;
         color: $green-500;
+    }
+}
+
+.Payments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #007e47;
+}
+
+.PaymentsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    img {
+        height: 30px;
+    }
+}
+
+.PaymentsTitle {
+    font-size: 16px;
+    font-weight: 900;
+    color: $footer-blue;
+}
+
+.PaymentsBanks {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.PaymentsBank {}
+
+.CopyrightSponsors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.Copyright {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.Sponsors {
+    display: flex;
+    justify-content: end;
+
+    img {
+        height: 50px;
     }
 }
