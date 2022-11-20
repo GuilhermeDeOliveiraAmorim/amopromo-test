@@ -6,7 +6,7 @@ function SectionPlanosPersonalizados() {
 
     return (
         <div className={PlanosPersonalizadosStyles.PlanosPersonalizados}>
-            <div>
+            <div className={PlanosPersonalizadosStyles.ImgPrincipal}>
                 <img src="01.png" alt="" />
             </div>
             <div className={PlanosPersonalizadosStyles.Content}>
