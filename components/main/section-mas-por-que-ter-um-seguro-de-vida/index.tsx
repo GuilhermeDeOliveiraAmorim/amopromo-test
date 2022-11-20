@@ -6,8 +6,6 @@ import PorQueSeguroStyles from './PorQueSeguro.module.scss';
 
 function SectionPorQueSeguro(props: IAccordionData) {
     const { data } = props;
-    console.log(data);
-
     return (
         <div className={PorQueSeguroStyles.PorQueSeguro}>
             <h1>
@@ -16,7 +14,7 @@ function SectionPorQueSeguro(props: IAccordionData) {
             <div className={PorQueSeguroStyles.Content}>
                 <div className={PorQueSeguroStyles.AccordionsList}>
                     {data.map(item =>
-                        <Accordion title={item.title} text={item.text} />
+                        <Accordion key={item.title} title={item.title} text={item.text} />
                     )}
                 </div>
                 <div className={PorQueSeguroStyles.Image}>
