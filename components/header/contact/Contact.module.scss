@@ -35,13 +35,10 @@
     }
 
     @media (max-width: $desktop_xsm) {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+        display: none;
     }
-    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {
-        
-    }
-    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {
-        
-    }
+
+    @media (min-width: $desktop_xsm) and (max-width: $desktop_sm) {}
+
+    @media (min-width: $desktop_sm) and (max-width: $desktop_md) {}
 }

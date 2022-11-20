@@ -3,9 +3,7 @@ import IContact from "../../../interfaces/IContact";
 import ContactStyles from './Contact.module.scss';
 
 function Contact(props: IContact) {
-
     const { title, phoneNumber, whatsapp } = props;
-
     return (
         <div className={ContactStyles.Contact}>
             <span className={ContactStyles.title}>
