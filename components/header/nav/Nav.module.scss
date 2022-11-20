@@ -9,7 +9,24 @@
     background-color: $green-700;
 
     @media (max-width: $desktop_xsm) {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.MenuMobile {
+    display: none;
+    gap: 5px;
+
+    @media (max-width: $desktop_xsm) {
+        display: flex;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: $white;
     }
 }
 

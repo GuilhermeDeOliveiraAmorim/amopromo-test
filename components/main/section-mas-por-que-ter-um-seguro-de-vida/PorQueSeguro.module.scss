@@ -55,4 +55,10 @@
     align-items: center;
     gap: 70px;
     padding: 20px;
+
+    @media (max-width: $desktop_xsm) {
+        img {
+            width: 100%;
+        }
+    }
 }

@@ -7,6 +7,7 @@ function Nav(menu: IMenu) {
     return (
         <div className={NavStyles.Nav}>
             <img src="logo-white.svg" />
+
             <div className={NavStyles.Menu}>
                 <ul>
                     {menu.menu.map(item =>
@@ -22,6 +23,10 @@ function Nav(menu: IMenu) {
                     <span>Área do Cliente</span>
                 </Link>
                 <img src="icons/arrow-right.svg" alt="" />
+            </div>
+            <div className={NavStyles.MenuMobile}>
+                <span>Menu</span>
+                <img src="/icons/arrow-down-white.svg" />
             </div>
         </div>
     )
