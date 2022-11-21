@@ -119,6 +119,7 @@
     @media (max-width: $desktop_xsm) {
         flex-direction: column;
         gap: 10px;
+        align-items: center;
     }
 }
 
@@ -129,6 +130,11 @@
 
     img {
         height: 30px;
+    }
+
+    @media (max-width: $desktop_xsm) {
+        padding: 20px;
+        align-items: center;
     }
 }
 
@@ -171,6 +177,8 @@
     @media (max-width: $desktop_xsm) {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 20px;
     }
 
     img {

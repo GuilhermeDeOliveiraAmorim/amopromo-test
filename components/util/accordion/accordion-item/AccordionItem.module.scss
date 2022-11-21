@@ -1,13 +1,14 @@
 @import "styles/variables";
 
 .AccordionItem {
+    display: felx;
+
     p {
         font-weight: 400;
         font-size: 14px;
         line-height: 150%;
+        padding-top: 10px;
         background-color: $white;
-        transition: height 0.2s ease-in-out;
-        overflow: hidden;
     }
 
     hr {
@@ -27,9 +28,8 @@
 
 .TitleH1 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 150%;
-    padding-bottom: 15px;
 }
 
 .TitleImg {
