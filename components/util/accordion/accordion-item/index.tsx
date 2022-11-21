@@ -21,10 +21,10 @@ function AccordionItem(props: IAccordion) {
     return (
         <div className={`${AccordionItemStyles.AccordionItem} ${isOpen ? 'active' : ''}`}>
             <div className={AccordionItemStyles.Title}>
-                <span className={AccordionItemStyles.TitleH1} onClick={btnOnClick}>
+                <span className={AccordionItemStyles.TitleH1}>
                     {title}
                 </span>
-                <img src="/icons/arrow-down.svg" alt="" />
+                <img src={isOpen ? "/icons/arrow-up.svg" : "/icons/arrow-down.svg"} className={AccordionItemStyles.TitleImg} onClick={btnOnClick} />
             </div>
             <p style={{ height }}>
                 {isOpen && <div className="accordion-item-content">{text}</div>}
