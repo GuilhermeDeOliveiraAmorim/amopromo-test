@@ -172,7 +172,7 @@
 
 .Sponsors {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     @media (max-width: $desktop_xsm) {
         display: grid;
