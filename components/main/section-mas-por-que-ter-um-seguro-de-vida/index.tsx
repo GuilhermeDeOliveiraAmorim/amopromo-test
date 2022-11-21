@@ -13,9 +13,7 @@ function SectionPorQueSeguro(props: IAccordionData) {
             </h1>
             <div className={PorQueSeguroStyles.Content}>
                 <div className={PorQueSeguroStyles.AccordionsList}>
-                    {data.map(item =>
-                        <Accordion key={item.title} title={item.title} text={item.text} />
-                    )}
+                    <Accordion data={data} />
                 </div>
                 <div className={PorQueSeguroStyles.Image}>
                     <img src="02.png" />

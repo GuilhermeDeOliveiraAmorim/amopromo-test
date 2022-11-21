@@ -1,0 +1,29 @@
+@import "styles/variables";
+
+.AccordionItem {
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+    }
+
+    hr {
+        border: 1px solid #CCD1D6;
+    }
+
+    @media (max-width: $desktop_xsm) {
+        padding: 20px;
+    }
+}
+
+.Title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.TitleH1 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding-bottom: 15px;
+}

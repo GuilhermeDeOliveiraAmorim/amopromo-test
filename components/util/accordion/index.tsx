@@ -1,23 +1,28 @@
-import React from "react";
-import IAccordion from "../../../interfaces/IAccordion";
+import React, { useState } from "react";
+import IAccordionData from "../../../interfaces/IAccordionData";
+import { AccordionItem } from "./accordion-item";
 import AccordionItemsStyles from './AccordionItems.module.scss';
 
-function Accordion(props: IAccordion) {
-    const { title, text } = props;
+function Accordion(props: IAccordionData) {
+    const { data } = props;
+
+    const [currentIdx, setCurrentIdx] = useState(-1);
+    const btnOnClick = (idx: number) => {
+        setCurrentIdx(idx);
+    };
+
     return (
-        <div className={AccordionItemsStyles.AccordionItem}>
-            <div className={AccordionItemsStyles.Title}>
-                <span className={AccordionItemsStyles.TitleH1}>
-                    {title}
-                </span>
-                <img src="/icons/arrow-down.svg" alt="" />
-            </div>
-            <p>
-                {text}
-            </p>
-            <hr />
+        <div className={AccordionItemsStyles.AccordionsList}>
+            {data.map((item, idx) =>
+                <AccordionItem
+                    {...item}
+                    isOpen={idx === currentIdx}
+                    btnOnClick={() => btnOnClick(idx)}
+                />
+            )}
         </div>
     )
 }
 
 export { Accordion };
+
