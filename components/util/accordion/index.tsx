@@ -15,6 +15,7 @@ function Accordion(props: IAccordionData) {
         <div className={AccordionItemsStyles.AccordionsList}>
             {data.map((item, idx) =>
                 <AccordionItem
+                    key={item.title}
                     {...item}
                     isOpen={idx === currentIdx}
                     btnOnClick={() => btnOnClick(idx)}

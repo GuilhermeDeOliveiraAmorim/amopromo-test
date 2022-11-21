@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
 import IAccordion from "../../../../interfaces/IAccordion";
 import AccordionItemStyles from './AccordionItem.module.scss';
+import React, { useEffect, useRef, useState } from "react";
 
 function AccordionItem(props: IAccordion) {
     const { title, text, btnOnClick, isOpen } = props;
@@ -19,16 +19,16 @@ function AccordionItem(props: IAccordion) {
     }, [isOpen]);
 
     return (
-        <div className={`${AccordionItemStyles.AccordionItem} ${isOpen ? 'active' : ''}`}>
+        <div key={title} className={`${AccordionItemStyles.AccordionItem} ${isOpen ? 'active' : ''}`}>
             <div className={AccordionItemStyles.Title}>
                 <span className={AccordionItemStyles.TitleH1}>
                     {title}
                 </span>
                 <img src={isOpen ? "/icons/arrow-up.svg" : "/icons/arrow-down.svg"} className={AccordionItemStyles.TitleImg} onClick={btnOnClick} />
             </div>
-            <p style={{ height }}>
-                {isOpen && <div className="accordion-item-content">{text}</div>}
-            </p>
+            <div style={{ height }}>
+                {isOpen && <p>{text}</p>}
+            </div>
             <hr />
         </div>
     )
