@@ -30,7 +30,7 @@ const quem_somos = [
     },
     {
         id: 6,
-        title: "Trabalhe conosc",
+        title: "Trabalhe conosco",
         link: "#",
     },
 ];
