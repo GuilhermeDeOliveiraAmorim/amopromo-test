@@ -9,8 +9,10 @@ function Header(props: IHeader) {
     const { contact, nav } = props;
     return (
         <div className={HeaderStyles.Header}>
-            <Contact {...contact} />
-            <Nav {...nav} />
+            <div>
+                <Contact {...contact} />
+                <Nav {...nav} />
+            </div>
             <Hero />
         </div>
     )
